@@ -1,0 +1,692 @@
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../assets/fonts/Gotham-Light.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../assets/fonts/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../assets/fonts/Gotham-Medium.ttf);
+}
+
+@font-face {
+    font-family: NouvelleVague-Black;
+    src: url(../assets/fonts/NouvelleVague-Black.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: none;
+}
+
+.noPadding {
+    padding: 0 !important;
+}
+
+.hide {
+    display: none;
+    z-index: 99999;
+}
+
+.logoWrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heroSubtitles {
+    width: 5.5vw;
+}
+
+.heroSubtitles h3 {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-family: Gotham-Light, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.35rem;
+    color: #50534a;
+}
+
+.heroTitleWrapper {
+    height: 450px;
+    width: 89vw;
+    position: relative;
+}
+
+.heroTitleInfoWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heroTitle {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    text-transform: lowercase;
+    color: #ffffff;
+    font-family: NouvelleVague-Black, sans-serif;
+    font-size: 3.75rem;
+    letter-spacing: 0.075rem;
+}
+
+.heroButton {
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+    text-transform: uppercase;
+    border: 1px solid #69ac65;
+    font-family: Gotham-Book, sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #ffffff;
+    background-color: #69ac65;
+    letter-spacing: 0.025rem;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.heroButton:hover {
+    background-color: #ffffff;
+    color: #69ac65;
+}
+
+.lightGreen {
+    color: #69ac65 !important;
+}
+
+.heroSlider {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.heroSlider img {
+    height: 450px;
+    width: 89vw;
+    object-fit: cover;
+    background-color: #000000;
+}
+
+.slick-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.slick-dots li:not(.slick-active) button {
+    border: none;
+    padding: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: transparent;
+    color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23 23'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5' fill='%23dfdfdf'/%3E%3C/svg%3E%0A");
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.slick-active button {
+    border: none;
+    padding: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: transparent;
+    color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23 23'%3E%3Ccircle cx='11.5' cy='11.5' r='11.5' fill='%23313131'/%3E%3C/svg%3E");
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    outline: none !important;
+    cursor: pointer;
+    opacity: 0.95;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.mainWrapper {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+    background-image: url(../assets/leafs.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 45%;
+}
+
+.mainTextLeftTitle {
+    margin: 0;
+    padding: 0;
+    font-family: NouvelleVague-Black, sans-serif;
+    color: #01804e;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.mainTextLeftSubtitle {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham-Medium, sans-serif;
+    color: #50534a;
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainTextLeftParagraph {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans-Regular, sans-serif;
+    color: #50534a;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+.mainTextRightWrapper div {
+    position: relative;
+}
+
+.mainTextRightImage {
+    width: 100%;
+}
+
+.mainTextRightWrapper div div {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(105, 172, 101, 0.8);
+}
+
+.mainTextRightTitle {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    position: absolute;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Gotham-Book, sans-serif;
+    color: #ffffff;
+    font-size: 1.85rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.85rem
+}
+
+footer {
+    background-image: url(../assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 89vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footerLogo {
+    padding-right: 2rem !important;
+}
+
+.footerSocial {
+    padding-left: 2rem !important;
+    text-align: left;
+    border-left: 1px solid #c0c0c2;
+    white-space: nowrap;
+}
+
+.footerSocialLink:hover {
+    text-decoration: none;
+}
+
+.footerSocialIcon {
+    width: 1.75rem;
+}
+
+.footerParagraph {
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
+    color: #c0c0c2;
+    font-family: Gotham-Book, sans-serif;
+    font-size: 0.6rem;
+}
+
+.formWrapper {
+    margin-top: 5rem;
+}
+
+.formTitle {
+    padding: 0;
+    width: 20rem;
+    margin: auto;
+    padding-bottom: 1.25rem;
+    font-family: Gotham-Book, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #69ac65;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.45rem;
+    border-bottom: 1px solid #9e9e99;
+}
+
+.form {
+    margin-top: 5rem;
+}
+
+.formInput {
+    margin: 0;
+    padding: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #9e9e99;
+    font-family: Gotham-Book, sans-serif;
+    color: #50534a;
+    font-size: 0.8rem;
+}
+
+.formSubtitle {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: Gotham-Medium, sans-serif;
+    color: #50534a;
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.formBottom {
+    width: 68vw;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+
+.formGroup {
+    margin-bottom: 0.8rem;
+}
+
+.formLabel {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham-Book, sans-serif;
+    font-weight: 800;
+    color: #50534a;
+    font-size: 0.8rem;
+    width: 14rem;
+}
+
+.formBottomInput {
+    margin: 0;
+    padding: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    border: 1px solid #9e9e99;
+    font-family: Gotham-Book, sans-serif;
+    color: #50534a;
+    font-size: 0.8rem;
+    width: 33.25vw;
+}
+
+.formGroupRadio {
+    margin-top: 1.5rem;
+}
+
+.formRadioLabel {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 2.75rem;
+    width: 2.75rem;
+    margin-left: 0.4rem;
+}
+
+.formRadio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.formRadioReal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.75rem;
+    width: 2.75rem;
+    border: 1px solid #9e9e99;
+    border-radius: 50%;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+.formRadio:checked ~ .formRadioReal {
+    background-color: #69ac65;
+}
+
+.formRadioLabelText {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham-Book, sans-serif;
+    color: #50534a;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-right: 1.25rem;
+    margin-left: 0.8rem;
+}
+
+.formGroupCheckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68vw;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.formCheckboxLabel {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 2.75rem;
+    width: 2.75rem;
+}
+
+.formCheckbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.formCheckboxReal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.75rem;
+    width: 2.75rem;
+    border: 1px solid #9e9e99;
+    border-radius: 50%;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+.formCheckbox:checked ~ .formCheckboxReal {
+    background-color: #69ac65;
+}
+
+.FormCheckboxText {
+    margin: 0;
+    padding: 0;
+    font-family: Gotham-Book, sans-serif;
+    color: #50534a;
+    font-size: 0.8rem;
+    margin-left: 3rem;
+}
+
+.formSumbit {
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+    margin-left: 16vw;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+    text-transform: uppercase;
+    border: 1px solid #01804e;
+    font-family: Gotham-Book, sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #ffffff;
+    background-color: #01804e;
+    letter-spacing: 0.025rem;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.formSumbit:hover {
+    background-color: #ffffff;
+    color: #01804e;
+}
+
+.formResult {
+    padding: 0;
+    width: 68vw;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: Gotham-Medium, sans-serif;
+    font-size: 1rem;
+    color: #ff0000;
+    display: none;
+}
+
+.shadowBoxWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9001;
+    top: 0;
+}
+
+.shadowBox {
+    position: absolute;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.shadowBoxCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.shadowBoxClose {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.shadowBoxCheckMark {
+    width: 7rem;
+    height: 7rem;
+}
+
+.shadowBoxTitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: Gotham-Medium, sans-serif;
+    font-size: 2rem;
+}
+
+.shadowBoxMessage {
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.shadowBoxButton {
+    margin-top: 2rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    text-transform: uppercase;
+    border: 1px solid #01804e;
+    font-family: Gotham-Book, sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #ffffff;
+    background-color: #01804e;
+    letter-spacing: 0.025rem;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.shadowBoxButton:hover {
+    background-color: #ffffff;
+    color: #01804e;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logoWrapper {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .heroSubtitles {
+        width: 10vw;
+    }
+
+    .heroTitleWrapper {
+        height: 450px;
+        width: 80vw;
+    }
+
+    .mainWrapper {
+        margin-top: 4.75rem;
+        margin-bottom: 4.75rem;
+        background-image: none;
+    }
+
+    .mainTextLeftWrapper {
+        margin-bottom: 3.5rem;
+    }
+
+    footer {
+        width: 80vw;
+    }
+
+    .formBottom {
+        width: 75vw;
+    }
+
+    .formLabel {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.35rem;
+    }
+
+    .formBottomInput {
+        padding: 0.5rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin-left: 0;
+        margin-right: 0;
+        width: 75vw;
+    }
+
+    .formGroupRadio {
+        margin-bottom: 0.8rem;
+    }
+
+    .formRadioLabel {
+        margin-left: 0rem;
+    }
+
+    .formGroupCheckbox {
+        width: 75vw;
+    }
+
+    .formSumbit {
+        margin-left: 12vw;
+    }
+
+    .formResult {
+        width: 76vw;
+    }
+
+
+
+}

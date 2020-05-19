@@ -1,0 +1,17 @@
+ --Database name = impact
+ 
+ CREATE TABLE contact (
+  id MEDIUMINT NOT NULL AUTO_INCREMENT,
+  date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  first_name varchar(100) NOT NULL,
+  last_name varchar(100) NOT NULL,
+  email varchar(100) NOT NULL,
+  phone varchar(100) NOT NULL,
+  city varchar(100) NOT NULL,
+  postal varchar(100) NOT NULL,
+  unit_size varchar(100) NOT NULL,
+  hear_about varchar(100) NOT NULL,
+  price varchar(100) NOT NULL,
+  is_broker varchar(50) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
